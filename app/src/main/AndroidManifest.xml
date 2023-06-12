@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaobaoUnion"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/Theme.user"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SearchActivity"  />
+        <activity android:name=".ui.activity.LoginActivity"  android:theme="@style/Theme.user"/>
+        <activity android:name=".ui.activity.MainActivity" android:exported="true"/>
+        <activity android:name=".ui.activity.TicketActivity" />
+        <activity android:name=".ui.activity.RegisterActivity"  android:theme="@style/Theme.user"/>
+        <activity android:name=".ui.activity.RegainActivity" android:theme="@style/Theme.user"/>
+        <activity android:name=".ui.activity.MineActivity" android:theme="@style/Theme.user"/>
+        <activity android:name=".ui.activity.ScanQrCodeActivity"/>
+        <activity android:name="com.tamsiree.rxui.activity.ActivityWebView" android:exported="false"/>
+    </application>
+
+</manifest>

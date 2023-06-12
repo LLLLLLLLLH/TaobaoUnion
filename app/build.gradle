@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.taobaounion'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.taobaounion"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.fragment:fragment:1.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.13.0"
+
+    implementation 'io.github.scwang90:refresh-layout-kernel:2.0.6'      //核心必须依赖
+    implementation 'io.github.scwang90:refresh-header-classics:2.0.6'    //经典刷新头
+    implementation 'io.github.scwang90:refresh-header-radar:2.0.6'       //雷达刷新头
+    implementation 'io.github.scwang90:refresh-header-falsify:2.0.6'     //虚拟刷新头
+    implementation 'io.github.scwang90:refresh-header-material:2.0.6'    //谷歌刷新头
+    implementation 'io.github.scwang90:refresh-header-two-level:2.0.6'   //二级刷新头
+    implementation 'io.github.scwang90:refresh-footer-ball:2.0.6'        //球脉冲加载
+    implementation 'io.github.scwang90:refresh-footer-classics:2.0.6'    //经典加载
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.open-android:RoundedImageView:v1.0.0'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.21'
+
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    implementation 'com.github.getActivity:ShapeView:8.5'
+
+    implementation 'com.tencent:mmkv-static:1.2.10'
+
+    //基础工具库
+    implementation 'com.github.tamsiree.RxTool:RxKit:2.6.3'
+    //UI库
+    implementation 'com.github.tamsiree.RxTool:RxUI:2.6.3'
+    //相机库
+    implementation 'com.github.tamsiree.RxTool:RxCamera:2.6.3'
+    //功能库（Zxing扫描与生成二维码条形码）
+    implementation 'com.github.tamsiree.RxTool:RxFeature:2.6.3'
+    //ArcGis For Android工具库（API：100.1以上版本）
+    implementation 'com.github.tamsiree.RxTool:RxArcGisKit:2.6.3'
+    //支付模块(支付宝 微信)[暂为待优化模块，谨慎]
+    implementation 'com.github.tamsiree.RxTool:RxPay:2.6.3'
+    implementation 'com.google.zxing:android-core:3.3.0'
+    implementation 'com.google.zxing:core:3.3.2'
+
+
+
+}

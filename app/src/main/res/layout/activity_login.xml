@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:drawableStart="@mipmap/back_white"
+        android:gravity="center|left"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/activity_login_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:riv_corner_radius="100dp"
+            android:src="@mipmap/default_avatar"
+            android:layout_marginTop="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="35dp"
+            />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_700"
+            android:hint="手机号"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        app:passwordToggleTintMode="src_in"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_700"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/activity_login_show_code"
+            app:passwordToggleTint="@color/teal_700">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_login_code"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/grey_700"
+                android:hint="验证码"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/activity_login_show_code"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@color/teal_200"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentEnd="true"
+             />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/activity_login_forest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:text="忘记密码"
+        android:textColor="@color/purple_200" />
+
+
+    <Button
+        android:id="@+id/activity_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/activity_login_button_bg"
+        android:text="登录"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_700" />
+
+    <Button
+        android:id="@+id/activity_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/activity_login_btn_create"
+        android:text="注册账号"
+        android:textAllCaps="false"
+        android:textColor="@color/teal_200" />
+
+
+</LinearLayout>

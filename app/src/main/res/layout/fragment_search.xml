@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_search_histories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="17sp"
+                android:layout_weight="9"
+                android:text="搜索历史"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/fragment_search_del_histories"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="18sp"
+                android:layout_marginEnd="19sp"
+                android:src="@mipmap/delete" />
+        </LinearLayout>
+
+        <com.example.taobaounion.ui.custom.TextFlowLayout
+            android:id="@+id/fragment_search_flow_histories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:horizontalSpace="16dp"
+            app:verticalSpace="16dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_search_recommendation_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="17sp"
+                android:layout_weight="9"
+                android:text="热门搜索"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.example.taobaounion.ui.custom.TextFlowLayout
+            android:id="@+id/fragment_search_flow_recommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:horizontalSpace="16dp"
+            app:verticalSpace="16dp" />
+    </LinearLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_search_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

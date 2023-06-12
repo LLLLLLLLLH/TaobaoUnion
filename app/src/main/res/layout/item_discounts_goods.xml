@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/select_content_bg"
+    android:orientation="vertical">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/item_discounts_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:src="@color/teal_200"
+        app:riv_corner_radius="6dp" />
+
+    <TextView
+        android:id="@+id/item_discounts_title"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:text="测试测试测试测试测试测试测测试"
+        android:textColor="#4A4A4A"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_discounts_oldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="￥59.0"
+            android:textColor="#D0021B"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_discounts_nowPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:text="劵后价：28.8"
+            android:textColor="#D0021B"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

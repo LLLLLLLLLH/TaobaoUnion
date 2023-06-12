@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="239dp"
+    android:layout_height="320dp"
+    android:layout_marginLeft="17dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/select_content_bg"
+    android:orientation="vertical">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/select_content_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="6dp" />
+
+    <TextView
+        android:id="@+id/select_content_tips"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/select_content_tv_bg"
+            android:gravity="center"
+            android:text="领劵购买"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/select_content_originalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="原价: 9.9元"
+            android:textColor="#F5A623" />
+    </LinearLayout>
+
+</LinearLayout>

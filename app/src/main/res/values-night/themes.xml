@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.TaobaoUnion" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/red_200</item>
+    </style>
+</resources>
