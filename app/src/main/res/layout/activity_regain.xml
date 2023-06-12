@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/login_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activity_regain_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:drawableStart="@mipmap/back_white"
+        android:gravity="center|left"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Get Your\nPassWord Back"
+        android:textSize="25sp"
+        android:typeface="monospace" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/activity_regain_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_register_edit_bg"
+            android:hint="图灵码"
+            android:paddingStart="15dp" />
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/activity_regain_show_code"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@color/teal_200"
+            app:riv_corner_radius="25dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/activity_regain_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_register_edit_bg"
+            android:hint="手机号"
+            android:paddingStart="15dp" />
+
+        <Button
+            android:id="@+id/activity_regain_get_phone_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_register_btn_bg"
+            android:hint="获取验证码" />
+    </RelativeLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/activity_regain_phone_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_register_edit_bg"
+        android:hint="验证码"
+        android:paddingStart="15dp" />
+    />
+
+
+    <EditText
+        android:id="@+id/activity_regain_oldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_register_edit_bg"
+        android:hint="旧密码"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/activity_regain_newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_register_edit_bg"
+        android:hint="新密码"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+
+    <EditText
+        android:id="@+id/activity_regain_require_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_register_edit_bg"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+    <Button
+        android:id="@+id/activity_regain_regain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/activity_login_button_bg"
+        android:text="确定"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

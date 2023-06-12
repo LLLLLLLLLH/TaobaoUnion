@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="red_200">#E36060</color>
+    <color name="red_700">#D0021B</color>
+    <color name="grey_200">#BFBDBD</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="tabSelectColor">#8F8F8F</color>
+    <color name="tabTextColor">#FFFFFFFF</color>
+    <color name="divisionLineColor">#EFEEEE</color>
+    <color name="grey_700">#dbdbdb</color>
+    <color name="grey_900">#ECEAEA</color>
+    <color name="purple_200">#673AB7</color>
+</resources>
